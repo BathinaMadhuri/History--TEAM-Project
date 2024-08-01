@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background: linear-gradient(45deg,#c40564,#d7a80e);
+   
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 5px;
+    padding-bottom: 100px;
+}
+.container .card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 300px;
+    background:#fff;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,.15);
+    transition: 0.5s;
+}
+.container .card:hover{
+    height: 400px;
+
+}
+.container .card .imgBx{
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 200px;
+    background: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.container .card:hover .imgBx{
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0,0,0,.2);
+}
+.container .card .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.container .card .content{
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    padding: 0 30px;
+    height: 35px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.5s;
+}
+.container .card:hover .content{
+    top: 130px;
+    height: 250px;
+
+}
+.container .card .content h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--clr);
+}
+.container .card .content p{
+    color: #333;
+}
+.container .card .content a{
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 5px 25px;
+    background: var(--clr);
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 8px;
+}
+@media screen and (max-width: 770px){
+    .container{
+        flex-basis: 100%;
+    }
+}
+
+.main-heading h1{
+    color: rgb(62, 41, 179);
+    text-align: center;
+    font-size: 2.5rem;
+    margin-left:  20rem;
+    margin-right: 25rem;
+    display: flex;
+    font-family: 'Montserrat',sans-serif;
+    background-image: linear-gradient(-225deg,#231557 0%,#44107a 29%,#ff1361 67%,#fff800 100%);
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation:  linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%) 2s linear infinite;
+    display: block;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.main-heading img{
+    margin-left: 25rem;
+}
+
+.wrapper{
+    width: 2000%;
+    margin: 0 auto;
+    height: 6rem;
+    background:  linear-gradient(#00545d, #000729);
+
+}
+.logo{
+    width: 30%;
+    float: left;
+    text-align: left;
+    line-height: 100px;
+        cursor: pointer;
+}
+.logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Pacifico';
+    color: #fff;
+    letter-spacing: 4px;
+    
+}
+nav{
+    float: right;
+    line-height: 100px;
+
+}
+nav ul{
+    float: right;
+}
+nav ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 17px;
+    padding: 0 16px;
+    display: block;
+}
+nav ul li a:hover{
+   
+}
+nav ul li ul{
+    position: absolute;
+    display: none;
+    background:  linear-gradient(#00545d, #000729);
+
+    border-radius: 0 0 5px 5px;
+}
+nav ul li:hover ul{
+    display: block;
+}
+nav ul li ul li{
+    line-height: 1;
+    width: 190px;
+    border-radius: 5px;
+    padding: 6px;
+}
+nav ul li ul li a{
+    padding: 10px 16px;
+}
+nav ul li ul li a:hover{
+    background-color: #46527a;
+}

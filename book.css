@@ -1,0 +1,86 @@
+nav{
+    
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: linear-gradient(#00545d,#000729);
+    align-items: center;
+    padding: 10px 20px;  
+    
+}
+.logo {
+    width: 70px;
+    cursor: pointer;
+
+}
+
+nav ul li{
+    list-style: none;
+    padding: 10px 7px;
+    margin-left: 1rem;
+    display: block;
+    float: left;
+    list-style: none;
+    position: relative;
+}
+nav ul li a{
+    color: #e2e1e1;
+    font-size: 20px;
+    text-decoration: none;
+    
+
+}
+nav ul li a:hover{
+    color: #d1c1c1;
+   
+} 
+nav h2{
+    color: rgb(0, 0, 0);
+}
+nav button{
+    color: red;
+    background-color: black;
+}
+nav button a{
+    text-decoration: none;
+    color: red;
+
+}
+nav ul li ul{
+    position: absolute;
+    display: none;
+    background: linear-gradient(#00545d,#000729);
+    border-radius: 0 0 5px 5px;
+}
+nav ul li:hover ul{
+    display: block;
+}
+nav ul li ul li{
+    line-height: 1;
+    width: 190px;
+    border-radius: 5px;
+    padding: 6px;
+}
+nav ul li ul li a{
+    padding: 1px 10px;
+}
+
+.card{
+    border-radius: 30px;
+    max-height: 450px;
+    max-width: fit-content;
+    margin-left: 10px;
+    transition: transform 600ms;
+    height: 20rem;
+    }
+    .card img{
+        max-height: 300px;
+       
+    }
+.card:hover{
+        transform: scale(1.09);
+    }
+.row{
+    background-color: #fff;
+    padding: 3rem 0 0 40px;
+}
